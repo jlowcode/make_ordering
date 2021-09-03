@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<form>
+    <fields addfieldpath="/administrator/components/com_fabrik/models/fields" name="params">
+        <fieldset name="plg-form-make-ordering" label="COM_FABRIK_OPTIONS">
+
+            <field
+				name="list_order_elements"
+                label="PLG_FABRIK_LIST_ORDER_ELEMENT_LABEL"
+                description="PLG_FABRIK_LIST_ORDER_ELEMENT_DESC"
+                type="listfields"
+            />
+
+            <field
+				name="list_path_elements"
+                label="PLG_FABRIK_LIST_PATH_ELEMENT_LABEL"
+                description="PLG_FABRIK_LIST_PATH_ELEMENT_DESC"
+                type="listfields"
+            />
+            
+        </fieldset>
+    </fields>
+</form>
