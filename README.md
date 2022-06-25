@@ -1,14 +1,47 @@
-# Make Ordering
-Plugin de formulário que faz a ordenação dos artigos por meio da ordem alfabética das seções.
+# Make Ordering - Form Plugin
 
-## Utilização
-Primeiramente, é necessário a criação de um novo elemento do tipo **Field** na lista de **Artigos** e oculta-lo do formulário, marcando "Sim" na opção **Ocultar**.
+![Joomla Badge](https://img.shields.io/badge/Joomla-5091CD?style=for-the-badge&logo=joomla&logoColor=white) ![PHP Badge](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 
-![Novo elemento](img/screenshot_1.png)
+<div align="center">
+  <img src="./.github/jlowcodelogo.png" width="350" />
+</div>
 
-Posteriormente, carregue o [plg_fabrik_form_make_ordering.zip](https://github.com/pittufg/make_ordering/releases) na página de administração do joomla e ative-o. Clique para editar o formulário de **Artigos** e entre na aba de **Plugins**. Clique para **Adicionar** e escolha o plugin **make_ordering**. Selecione o elemento de ordem, que é o elemento criado anteriomente e também selecione o elemento que servirá de base para a ordenação, no caso, o elemento **path** que faz referência as seções.
+## Conteúdo
 
-![Novo elemento](img/screenshot_2.png)
+- [Sobre](#sobre)
+- [Configuração](#configuração)
+  - [Order element](#order-element)
+  - [Base element](#base-element)
+- [Uso](#configuração)
 
-### Observações
-A primeira ordenação somente será feita após a criação de um novo registro ou edição de algum registro.
+## 💭 Sobre
+
+O make_ordering é um plugin de formulário que permite a ordenação dos artigos em ordem alfabética por meio das seções.
+
+## ⚙️ Configuração
+
+De início, é necessário adicionar na lista um novo elemmento do tipo field que será responsável por armazenar a ordem atual:
+
+![New element type field](./.github/01.png)
+
+Agora é necessário editar o formulário, acessar a aba de plugins e selecionar o make_ordering como plugin.
+
+Em condition, escreve a condição a qual o plugin será acionado, neste caso será como `return true`:
+
+![return true condition](./.github/02.png)
+
+### Order element
+
+Na opção Order element, selecione a o element recém criado anteriormente que armazenará a ordem:
+
+![Order element](./.github/03.png)
+
+### Base element
+
+Selecione o element que de fato será utilizado como base para realizar a ordenação
+
+![Base element](./.github/04.png)
+
+## 💻 Uso
+
+Ao criar um novo registro ou editar um registro existente, o plugin irá realizar a primeira ordenação dos registros.
